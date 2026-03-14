@@ -1,0 +1,75 @@
+:root {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #233044;
+  background:
+    linear-gradient(180deg, #f6efe5 0%, #f0ece6 42%, #e5eaef 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --heading: #162033;
+  --muted: #5d6777;
+  --accent: #bf5a36;
+  --surface: rgba(250, 246, 240, 0.82);
+  --panel: rgba(255, 252, 247, 0.76);
+  --panel-strong: rgba(247, 232, 213, 0.95);
+  --card-highlight: rgba(255, 247, 237, 0.98);
+  --border: rgba(22, 32, 51, 0.1);
+  --border-strong: rgba(22, 32, 51, 0.18);
+  --tag: rgba(191, 90, 54, 0.12);
+  --glow: rgba(235, 180, 120, 0.24);
+  --glow-strong: rgba(111, 141, 181, 0.18);
+}
+
+body.dark {
+  color: #e8edf4;
+  background:
+    linear-gradient(180deg, #121826 0%, #152235 40%, #0b1320 100%);
+
+  --heading: #f3f1eb;
+  --muted: #b3bfd0;
+  --accent: #f09b62;
+  --surface: rgba(14, 24, 39, 0.86);
+  --panel: rgba(20, 31, 49, 0.8);
+  --panel-strong: rgba(33, 49, 70, 0.94);
+  --card-highlight: rgba(34, 49, 69, 0.96);
+  --border: rgba(230, 236, 244, 0.08);
+  --border-strong: rgba(230, 236, 244, 0.16);
+  --tag: rgba(240, 155, 98, 0.14);
+  --glow: rgba(240, 155, 98, 0.12);
+  --glow-strong: rgba(82, 138, 201, 0.14);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 0.25s ease;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
